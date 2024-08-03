@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/cs22?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #a17eb8;
+    font-family: 'poppins',sans-serif; 
+}
+.container{
+    height: 320px;
+    width: 300px;
+    background: rgb(74, 14, 102);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+.timer-container{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    position: relative;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #ffffff;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    background: linear-gradient(#c265dff1, #ca711d);
+}
+.timer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 180px;
+    width: 180px;
+    background: #ffffff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(182, 196, 209) 3px 3px 6px 0px
+    inset, rgba(255 255 255 0.5) -3px -3px 6px 1px inset;
+}
+
+.hour,.minute,.second{
+    font-size: 35px;
+    margin-left: 3px;
+}
+.millisecond{
+    color: #f76e7e;
+    font-size: 15px;
+    position: relative;
+    top: -8px;
+}
+.lap-container{
+    height: 165px;
+    width: 90%;
+    border-top: 1px solid grey;
+    position: absolute;
+    bottom: -84px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow-y: scroll;
+    display: none;
+}
+.lap-container > li{
+    list-style-type: none;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+}
+.lap_time{
+    float: right;
+}
+button{
+    all: unset;
+    padding: 5px;
+    width: 100px;
+    background: linear-gradient(#f8981b,#cb6fe2);
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+    position: absolute;
+    top: 280px;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.lap-btn,.reset-btn{
+    left: 25%;
+}
+.stop-btn,.lap-btn{
+    display: none;
+}
